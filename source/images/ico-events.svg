@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="31px" viewBox="0 0 22 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>loc-point</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="resources/explorations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.400000006" stroke-linejoin="round">
+        <g id="resources-v1" transform="translate(-1215.000000, -664.000000)" stroke="#484E63" stroke-width="1.39999998">
+            <g id="types" transform="translate(194.000000, 664.000000)">
+                <g id="Group-23" transform="translate(1005.000000, 0.000000)">
+                    <g id="loc-point" transform="translate(12.000000, 0.000000)">
+                        <path d="M23.3255977,15.5221227 L14.7956659,30.2957364 L6.272075,15.5362136 C5.42027955,14.0771 4.93202955,12.37985 4.93202955,10.5684636 C4.93202955,5.12091818 9.34812045,0.704827273 14.7956659,0.704827273 C20.2432114,0.704827273 24.6593023,5.12091818 24.6593023,10.5684636 C24.6593023,12.3742136 24.1738705,14.0665318 23.3263023,15.5228273 L23.3255977,15.5221227 L23.3255977,15.5221227 Z" id="Stroke-348"></path>
+                        <path d="M10.5681818,10.5681818 C10.5681818,8.23331818 12.4605909,6.34090909 14.7954545,6.34090909 C17.1303182,6.34090909 19.0227273,8.23331818 19.0227273,10.5681818 C19.0227273,12.9030455 17.1303182,14.7954545 14.7954545,14.7954545 C12.4605909,14.7954545 10.5681818,12.9030455 10.5681818,10.5681818 L10.5681818,10.5681818 Z" id="Stroke-349"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

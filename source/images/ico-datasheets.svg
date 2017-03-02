@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="31px" viewBox="0 0 25 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>fil-graph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="resources/explorations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.400000006" stroke-linejoin="round">
+        <g id="resources-v1" transform="translate(-753.000000, -664.000000)" stroke="#484E63" stroke-width="1.39999998">
+            <g id="types" transform="translate(194.000000, 664.000000)">
+                <g id="Group-26" transform="translate(526.000000, 0.000000)">
+                    <g id="fil-graph" transform="translate(31.000000, 0.000000)">
+                        <path d="M26.0681818,28.8863636 C26.0681818,29.6648864 25.4376136,30.2954545 24.6590909,30.2954545 L4.93181818,30.2954545 C4.15329545,30.2954545 3.52272727,29.6648864 3.52272727,28.8863636 L3.52272727,2.11363636 C3.52272727,1.33511364 4.15329545,0.704545455 4.93181818,0.704545455 L19.7272727,0.704545455 L26.0681818,7.04545455 L26.0681818,28.8863636 L26.0681818,28.8863636 Z" id="Stroke-21"></path>
+                        <path d="M19.0227273,0.704545455 L19.0227273,6.34090909 C19.0227273,7.11943182 19.6532955,7.75 20.4318182,7.75 L26.0681818,7.75" id="Stroke-22"></path>
+                        <path d="M21.8409091,20.4318182 L7.75,20.4318182" id="Stroke-23"></path>
+                        <path d="M10.5681818,20.4318182 L10.5681818,17.6136364" id="Stroke-24"></path>
+                        <path d="M14.7954545,19.7272727 L14.7954545,14.7954545" id="Stroke-25"></path>
+                        <path d="M19.0227273,20.4318182 L19.0227273,11.9772727" id="Stroke-26"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

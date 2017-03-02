@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Reflektive" %></title>
+
+    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "unslider" %>
+    <%= stylesheet_link_tag "unslider-overrides" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <%= javascript_include_tag 'unslider' %>
+    <%= javascript_include_tag 'site' %>
+  </body>
+</html>

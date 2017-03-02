@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>net-wifi-edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="resources/explorations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.400000006" stroke-linejoin="round">
+        <g id="resources-v1" transform="translate(-598.000000, -664.000000)" stroke="#484E63" stroke-width="1.39999998">
+            <g id="types" transform="translate(194.000000, 664.000000)">
+                <g id="Group-22" transform="translate(380.000000, 0.000000)">
+                    <g id="Group-27">
+                        <g id="net-wifi-edit" transform="translate(24.000000, 0.000000)">
+                            <path d="M23.25,0.704545455 C10.7992727,0.704545455 0.704545455,10.79575 0.704545455,23.25" id="Stroke-113"></path>
+                            <path d="M23.25,5.63636364 C13.5230455,5.63636364 5.63636364,13.5202273 5.63636364,23.25" id="Stroke-114"></path>
+                            <path d="M23.25,10.5681818 C16.2461136,10.5681818 10.5681818,16.2447045 10.5681818,23.25" id="Stroke-115"></path>
+                            <path d="M27.415625,17.8216886 L28.6795795,19.0863477 C28.9550568,19.361825 28.9550568,19.8070977 28.6795795,20.082575 L20.673125,28.0918477 L16.2041932,30.2956659 L18.4080114,25.825325 L26.4102386,17.8216886 C26.6878295,17.5440977 27.1387386,17.5440977 27.415625,17.8216886 L27.415625,17.8216886 Z" id="Stroke-116"></path>
+                            <path d="M18.60775,25.6262909 L20.8770909,27.8864727" id="Stroke-117"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="31px" viewBox="0 0 25 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>pre-doc-pie-chart-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="resources/explorations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.400000006" stroke-linejoin="round">
+        <g id="resources-v1" transform="translate(-910.000000, -664.000000)" stroke="#484E63" stroke-width="1.39999998">
+            <g id="types" transform="translate(194.000000, 664.000000)">
+                <g id="Group-25" transform="translate(677.000000, 0.000000)">
+                    <g id="pre-doc-pie-chart-2" transform="translate(37.000000, 0.000000)">
+                        <path d="M5.63636364,0.704545455 L19.7272727,0.704545455 L26.0681818,7.04545455 L26.0681818,28.1818182 C26.0681818,29.3485455 25.1212727,30.2954545 23.9545455,30.2954545 L5.63636364,30.2954545 C4.46963636,30.2954545 3.52272727,29.3485455 3.52272727,28.1818182 L3.52272727,2.81818182 C3.52272727,1.65145455 4.46963636,0.704545455 5.63636364,0.704545455" id="Stroke-19"></path>
+                        <path d="M19.0227273,0.704545455 L19.0227273,5.63636364 C19.0227273,6.80309091 19.9696364,7.75 21.1363636,7.75 L26.0681818,7.75" id="Stroke-20"></path>
+                        <path d="M21.8409091,16.2045455 C21.8409091,20.09575 18.6866591,23.25 14.7954545,23.25 C10.90425,23.25 7.75,20.09575 7.75,16.2045455 C7.75,12.3133409 10.90425,9.15909091 14.7954545,9.15909091 C18.6866591,9.15909091 21.8409091,12.3133409 21.8409091,16.2045455 L21.8409091,16.2045455 Z" id="Stroke-21"></path>
+                        <polyline id="Stroke-22" points="14.7954545 9.15909091 14.7954545 16.2045455 21.8409091 16.2045455"></polyline>
+                        <path d="M14.7954545,16.2045455 L9.81361364,11.2227045" id="Stroke-23"></path>
+                        <path d="M14.7954545,16.2045455 L9.81361364,21.1863864" id="Stroke-24"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
