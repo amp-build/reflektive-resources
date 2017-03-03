@@ -4,7 +4,6 @@ jQuery(document).ready(function($) {
     slidesToScroll: 1,
     arrows: false,
     vertical: true,
-    autoplay: true,
   });
 
   $('.hero-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -20,6 +19,5 @@ jQuery(document).ready(function($) {
     asNavFor: '.hero-slider',
     focusOnSelect: true,
     vertical: true,
-    autoplay: true
   });
 });
