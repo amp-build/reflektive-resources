@@ -230,8 +230,9 @@ h2 {
           display: block;
           font-size: 18px;
 
-          svg {
-            stroke-opacity: 0.4;
+          svg path,
+          svg polyline {
+            stroke: #acb1ba;
           }
 
           span {
@@ -243,8 +244,9 @@ h2 {
             color: $deep_purple;
             text-decoration: none;
 
-            svg {
-              stroke-opacity: 1;
+            svg path,
+            svg polyline {
+              stroke: $deep_purple;
             }
           }
         }
