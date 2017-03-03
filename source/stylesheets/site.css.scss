@@ -16,6 +16,13 @@ body {
   font-family: "Avenir Next", "Avenir", "Open Sans", sans-serif;
 }
 
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  padding: 40px 0;
+  text-align: center;
+}
+
 .navbar {
   background-color: $pure_white;
   box-shadow: 0 2px 10px 0 rgba(72,78,99,0.14);
@@ -48,6 +55,7 @@ body {
       border-radius: 4px;
       padding: 16px 40px;
       margin-top: 14px;
+      font-weight: 600;
 
       &:hover {
         background: $deep_purple;
@@ -68,13 +76,125 @@ body {
 #hero {
   background-image: url('../images/hero/slide_1@2x.png');
   background-size: cover;
-  height: 450px;
+  position: relative;
 }
 
 .hero-slider {
-  ul {
-    li {
-      height: 450px;
+  background-image: linear-gradient(0deg, #8CD2D6 0%, #607AB9 100%);
+
+  .slick-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__slide {
+    display: table;
+    height: 450px;
+
+    &__content {
+      display: table-cell;
+      vertical-align: middle;
+      color: $pure_white;
+
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        margin: 16px 0 8px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      a.btn-download {
+        display: inline-block;
+        background-color: $cinnabar;
+        color: $pure_white;
+        padding: 16px 32px;
+        border-radius: 4px;
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.hero-slider-nav-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 30px;
+
+  .slick-list {
+    padding-right: 16px;
+  }
+
+  .slick-slide {
+    background: $pure_white;
+    padding: 16px;
+    height: 115px;
+    margin: 8px 0;
+    cursor: pointer;
+    position: relative;
+
+    .resource-type {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19px;
+      color: $mirror_1;
+    }
+
+    .active-arrow {
+      position: absolute;
+      right: -24px;
+      top: 48px;
+      display: none;
+      width: 24px;
+      height: 24px;
+      background: $pure_white;
+      margin: 3px 0 0 30px;
+      /* Rotate */
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      /* Rotate Origin */
+      -webkit-transform-origin: 0 100%;
+      -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+      -o-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 8px 0 0;
+      line-height: 25px;
+      color: $deep_purple;
+    }
+
+    &.slick-current {
+      .active-arrow {
+        display: block;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -82,13 +202,6 @@ body {
 #resource-grid {
   background: $ice_gray;
   padding-bottom: 80px;
-
-  h2 {
-    font-weight: 300;
-    font-size: 24px;
-    padding: 40px 0;
-    text-align: center;
-  }
 
   .resource-type-filter {
     text-align: center;
@@ -131,10 +244,19 @@ body {
   }
 }
 
-.resource--item {
+.resource-item {
   $grandparent: &;
   height: 380px;
   margin-bottom: 30px;
+
+  > a {
+    display: block;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+    }
+  }
+
 
   &#{&}__video-resource {
     #{$grandparent}__image {
@@ -232,6 +354,7 @@ body {
       p {
         font-size: 14px;
         line-height: 22px;
+        color: $deep_purple;
       }
 
       h3 {
@@ -259,6 +382,7 @@ body {
     padding: 16px;
 
     h3 {
+      color: $deep_purple;
       font-weight: 400;
       font-size: 18px;
       line-height: 25px;
@@ -274,4 +398,159 @@ body {
     color: $mirror_1 !important;
     text-align: center;
   }
+}
+
+.next-prev,
+.view-more {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    border: 2px solid $deep_purple;
+    border-radius: 4px;
+    padding: 16px 40px;
+    color: $deep_purple;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 40px auto;
+
+    &:hover {
+      background: $deep_purple;
+      color: $ice_gray;
+      text-decoration: none;
+    }
+  }
+}
+
+.resources-pagination {
+  background: $pure_white;
+  padding: 8px;
+
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  p, &__btn {
+    float:right;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: $deep_purple;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+
+  &__btn-inactive {
+    background-color: $ice_gray;
+  }
+
+  &__btn-prev {
+    background-image: url('../images/pagination-prev.svg');
+  }
+  &__btn-next {
+    background-image: url('../images/pagination-next.svg');
+  }
+}
+
+#in-the-press {
+  padding: 40px 0;
+  background: $pure_white;
+}
+
+.press-item {
+  $grandparent: &;
+  height: 265px;
+  margin-bottom: 30px;
+
+  > a {
+    display: block;
+    height: 100%;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+    }
+  }
+
+  &__image {
+    background-size: cover;
+    height: 100%;
+  }
+
+  &__body {
+    background-color: transparentize($deep_purple, 0.3);
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    position: relative;
+    color: $pure_white;
+
+    #{$grandparent}__body_title {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+    }
+    span {
+      font-weight: 600;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      margin: 8px 0 0;
+    }
+  }
+}
+
+#cta-primary {
+  background-color: $mirror_1;
+  text-align: center;
+
+  p {
+    color: $pure_white;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.32px;
+    padding: 80px 0 20px;
+  }
+
+  .input-group {
+    font-size: 16px;
+    margin: 0 auto 80px;
+
+    input,button {
+      height: 56px;
+      border: 0;
+      box-shadow: none;
+    }
+
+    input {
+      width: 300px;
+    }
+
+    button {
+      width: 200px;
+      background: $cinnabar;
+      color: $pure_white;
+      font-weight: 600;
+
+    }
+  }
+}
+
+footer {
+  background: $deep_purple;
+  color: $pure_white;
+  padding: 200px 0;
+  text-align: center;
 }
