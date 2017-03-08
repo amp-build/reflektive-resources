@@ -16,11 +16,19 @@ body {
   font-family: "Avenir Next", "Avenir", "Open Sans", sans-serif;
 }
 
+#top,
+.navbar,
+.navbar-header {
+  height: 84px;
+}
+
 h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 24px;
-  padding: 40px 0;
+  line-height: 32px;
+  padding: 20px 16px;
   text-align: center;
+  margin: 0;
 }
 
 .navbar {
@@ -28,6 +36,21 @@ h2 {
   box-shadow: 0 2px 10px 0 rgba(72,78,99,0.14);
   border: none;
   margin-bottom: 0;
+}
+
+.navbar-toggle {
+  margin-top: 24px;
+  border: 2px solid $deep_purple;
+
+  .icon-bar {
+    background: $deep_purple;
+  }
+}
+.navbar-collapse {
+  text-align: center;
+  background: $pure_white;
+  height: 100vh !important;
+  max-height: none !important;
 }
 
 .navbar-brand {
@@ -38,9 +61,9 @@ h2 {
   li {
     a {
       color: $deep_purple;
-      font-size: 14px;
+      font-size: 16px;
       text-transform: uppercase;
-      padding: 32px 24px;
+      padding: 16px;
 
       &:focus,
       &:hover {
@@ -54,8 +77,9 @@ h2 {
       border: 2px solid $deep_purple;
       border-radius: 4px;
       padding: 16px 40px;
-      margin-top: 14px;
+      margin: 0 auto;
       font-weight: 600;
+      width: 75%;
 
       &:hover {
         background: $deep_purple;
@@ -82,10 +106,76 @@ h2 {
 .hero-slider {
   background-image: linear-gradient(0deg, #8CD2D6 0%, #607AB9 100%);
   z-index: 50;
+  text-align: center;
 
   .slick-slide {
     background-size: cover;
     background-position: center;
+  }
+
+  $slick-dot-color: $pure_white !default;
+  $slick-dot-color-active: $slick-dot-color !default;
+  $slick-dot-character: "\2022" !default;
+  $slick-dot-size: 24px !default;
+  $slick-opacity-default: 1 !default;
+  $slick-opacity-on-hover: 1 !default;
+  $slick-opacity-not-active: 0.25 !default;
+
+  .slick-dots {
+    position: absolute;
+    bottom: 8px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 20px;
+            width: 20px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                &:before {
+                    opacity: 1;
+                }
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: $slick-dot-character;
+                width: 20px;
+                height: 20px;
+                font-size: $slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: $slick-dot-color;
+                opacity: $slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        &.slick-active button:before {
+            color: $slick-dot-color-active;
+            opacity: $slick-opacity-default;
+        }
+    }
   }
 
   &__slide {
@@ -104,7 +194,7 @@ h2 {
       }
 
       h3 {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 400;
         line-height: 40px;
         margin: 16px 0 8px;
@@ -212,52 +302,68 @@ h2 {
   background: $ice_gray;
   padding-bottom: 80px;
 
+  .resource-type-filter-dropdown {
+    text-align: center;
+    margin-bottom: 16px;
+    
+    a {
+        cursor: pointer;
+        width: 90%;
+        display: block;
+        padding: 0 16px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 16px;
+        line-height: 50px;
+        color: #adb1b9;
+        background: $pure_white;
+        height: 50px;
+        border-radius: 4px;
+
+        background-image: url('../images/ico-dropdown.svg');
+        background-repeat: no-repeat;
+        background-position: 95% center;
+
+        &:hover {
+          text-decoration: none;
+        }
+    }
+  }
+
   .resource-type-filter {
     text-align: center;
     margin-bottom: 40px;
-
     ul {
+      background: $pure_white;
+      width: 90%;
+      margin: 16px auto;
       list-style: none;
-      margin: 0;
       padding: 0;
 
       li {
-        display: inline-block;
-        padding: 0 24px;
-
         a {
-          color: transparentize($deep_purple, 0.4);
+          padding: 16px;
+          text-align: left;
           display: block;
-          font-size: 18px;
 
-          svg path,
-          svg polyline {
-            stroke: #acb1ba;
+          svg {
+            display: none;
           }
 
-          span {
-            display: block;
-          }
-
-          &.active,
           &:hover {
-            color: $deep_purple;
+            background: #adb1b9;
+            color: $pure_white;
             text-decoration: none;
-
-            svg path,
-            svg polyline {
-              stroke: $deep_purple;
-            }
           }
         }
       }
     }
+
   }
 }
 
 .resource-item {
   $grandparent: &;
-  height: 380px;
   margin-bottom: 30px;
 
   > a {
@@ -360,7 +466,7 @@ h2 {
 
   &#{&}__no-image {
     #{$grandparent}__body {
-      height: 380px;
+      height: 345px;
 
       p {
         font-size: 14px;
@@ -379,7 +485,7 @@ h2 {
   }
 
   #{&}__image {
-    height: 200px;
+    height: 124px;
 
     img {
       width: 100%;
@@ -389,14 +495,14 @@ h2 {
   #{&}__body {
     background: $pure_white;
     position: relative;
-    height: 180px;
     padding: 16px;
+    height: 220px;
 
     h3 {
       color: $deep_purple;
       font-weight: 400;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 16px;
+      line-height: 24px;
       margin: 8px 0 0;
     }
   }
@@ -516,8 +622,8 @@ h2 {
 
     h3 {
       font-weight: 400;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 16px;
+      line-height: 24px;
       margin: 8px 0 0;
     }
   }
@@ -529,15 +635,15 @@ h2 {
 
   p {
     color: $pure_white;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 0.32px;
-    padding: 80px 0 20px;
+    padding: 40px 0 10px;
   }
 
   .input-group {
     font-size: 16px;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
 
     input,button {
       height: 56px;
@@ -546,11 +652,11 @@ h2 {
     }
 
     input {
-      width: 300px;
+      width: auto;
     }
 
     button {
-      width: 200px;
+      width: 100px;
       background: $cinnabar;
       color: $pure_white;
       font-weight: 600;
@@ -565,3 +671,5 @@ footer {
   padding: 200px 0;
   text-align: center;
 }
+
+@import "desktop";

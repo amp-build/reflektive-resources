@@ -3,7 +3,7 @@ title: Resources | Reflektive
 ---
 
 <section id="top">
-  <nav class="navbar">
+  <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content" aria-expanded="false">
@@ -88,7 +88,7 @@ title: Resources | Reflektive
     </div>
   </div>
 
-  <div class="hero-slider-nav-container">
+  <div class="hero-slider-nav-container visible-lg">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -123,13 +123,31 @@ title: Resources | Reflektive
   </div>
   <div class="container">
     <div class="row">
+      <!--
+      <div class="dropdown hidden-lg">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          All Resources
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">eBooks</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Webinars</a></li>
+          <li><a href="#">Blog Posts</a></li>
+          <li><a href="#">Datasheets</a></li>
+          <li><a href="#">Infographics</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+      -->
       <%= partial 'partials/resource-type-filter' %>
     </div>
   </div>
   <div class="container">
     <div class="row">
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/ebook_ultimate_guide.jpg" />
@@ -144,7 +162,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item resource-item__email-cta col-lg-3">
+      <div class="resource-item resource-item__email-cta col-lg-3 hidden-xs">
         <div class="resource-item__body">
           <div class="resource-item__body-cell">
             <h3>Enter your email below to stay up-to-date!</h3>
@@ -156,7 +174,7 @@ title: Resources | Reflektive
         </div>
       </div><!-- resource-item -->
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/how_to_manage.jpg" />
@@ -171,7 +189,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/digital_photo_printing.jpg" />
@@ -186,7 +204,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item resource-item__video-resource col-lg-3">
+      <div class="resource-item resource-item__video-resource col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <div class="resource-item__btn-play"></div>
@@ -202,7 +220,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/can_you_get.jpg" />
@@ -217,7 +235,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item resource-item__icon-type col-lg-3">
+      <div class="resource-item resource-item__icon-type col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <div class="resource-item__image-cell">
@@ -249,7 +267,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/becoming_a_dvd.jpg" />
@@ -264,7 +282,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item resource-item__no-image col-lg-3">
+      <div class="resource-item resource-item__no-image col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__body">
             <span>
@@ -272,14 +290,14 @@ title: Resources | Reflektive
             </span>
             <h3>How To Meet That Special Someone</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida rhoncus sollicitudin. Curabitur finibus molestie pharetra. Fusce eleifend blandit erat, at faucibus lorem convallis in. Integer faucibus ut sapien et congue.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida rhoncus sollicitudin. Curabitur finibus molestie pharetra.
             </p>
             <span class="resource-item__cta-text">Read the Post</span>
           </div>
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/anon_proxy.jpg" />
@@ -294,7 +312,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item resource-item__video-resource col-lg-3">
+      <div class="resource-item resource-item__video-resource col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <div class="resource-item__btn-play"></div>
@@ -310,7 +328,7 @@ title: Resources | Reflektive
         </a>
       </div><!-- resource-item -->
 
-      <div class="resource-item col-lg-3">
+      <div class="resource-item col-lg-3 col-xs-6">
         <a href="#">
           <div class="resource-item__image">
             <img src="images/items/stu_unger.jpg" />
@@ -353,7 +371,7 @@ title: Resources | Reflektive
     </div>
 
     <div class="row">
-      <div class="press-item col-lg-4">
+      <div class="press-item col-lg-4 col-xs-6">
         <a href="#">
           <div class="press-item__image" style="background-image: url('../images/press/facts_why_inkjet.jpg')">
             <div class="press-item__body">
@@ -368,7 +386,7 @@ title: Resources | Reflektive
           </div>
         </a>
       </div>
-      <div class="press-item col-lg-4">
+      <div class="press-item col-lg-4 col-xs-6">
         <a href="#">
           <div class="press-item__image" style="background-image: url('../images/press/facts_why_inkjet.jpg')">
             <div class="press-item__body">
@@ -383,7 +401,7 @@ title: Resources | Reflektive
           </div>
         </a>
       </div>
-      <div class="press-item col-lg-4">
+      <div class="press-item col-lg-4 col-xs-6">
         <a href="#">
           <div class="press-item__image" style="background-image: url('../images/press/facts_why_inkjet.jpg')">
             <div class="press-item__body">
@@ -398,7 +416,7 @@ title: Resources | Reflektive
           </div>
         </a>
       </div>
-      <div class="press-item col-lg-4">
+      <div class="press-item col-lg-4 col-xs-6">
         <a href="#">
           <div class="press-item__image" style="background-image: url('../images/press/facts_why_inkjet.jpg')">
             <div class="press-item__body">
@@ -413,7 +431,7 @@ title: Resources | Reflektive
           </div>
         </a>
       </div>
-      <div class="press-item col-lg-4">
+      <div class="press-item col-lg-4 col-xs-6">
         <a href="#">
           <div class="press-item__image" style="background-image: url('../images/press/facts_why_inkjet.jpg')">
             <div class="press-item__body">
@@ -428,7 +446,7 @@ title: Resources | Reflektive
           </div>
         </a>
       </div>
-      <div class="press-item col-lg-4">
+      <div class="press-item col-lg-4 col-xs-6">
         <a href="#">
           <div class="press-item__image" style="background-image: url('../images/press/facts_why_inkjet.jpg')">
             <div class="press-item__body">
