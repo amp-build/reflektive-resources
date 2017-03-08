@@ -8,14 +8,14 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Reflektive" %></title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <%= stylesheet_link_tag "slick" %>
     <%= stylesheet_link_tag "site" %>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <%= javascript_include_tag 'jquery-3.1.1.min' %>
+    <%= javascript_include_tag 'slick.min' %>
     <%= javascript_include_tag 'site' %>
   </body>
 </html>
